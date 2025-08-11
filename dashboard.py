@@ -80,7 +80,7 @@ st.plotly_chart(fig1)
 
 # Durschnitt:
 urns_since_stats = df['total-urns'].iloc[-1] - df['total-urns'].iloc[0]
-num_days = (df['time'].iloc[-1][10:] - df['time'].iloc[0][10:]).days
+num_days = (df['time'].iloc[-1].normalize() - df['time'].iloc[0].normalize()).days
 average_per_day = urns_since_stats / num_days
 
 st.write(f"Durchschnittlich vergebene URNs pro Tag: {average_per_day:.2f}")

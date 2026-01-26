@@ -1,5 +1,6 @@
 requests
 pandas
 datetime
-streamlit[all]
+altair
+streamlit
 plotly

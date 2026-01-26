@@ -1,6 +1,5 @@
 requests
 pandas
 datetime
-altair<5
-streamlit
+streamlit>=1.23.0
 plotly
